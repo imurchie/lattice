@@ -1,0 +1,11 @@
+{
+  "name": "lmdb",
+  "version": "1.0.0",
+  "description": "Lattice Movie Database",
+  "main": "",
+  "keywords": [],
+  "author": "Isaac A. Murchie",
+  "license": "Apache-2.0",
+  "scripts": {
+  }
+}
