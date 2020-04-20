@@ -4,9 +4,19 @@
   "description": "Lattice Movie Database: Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/**/*.test.js",
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "Isaac A. Murchie",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "fastify": "^2.0.0",
+    "fastify-plugin": "^1.5.0",
+    "fastify-autoload": "^1.0.0"
+  },
+  "devDependencies": {
+    "tap": "^12.5.3"
+  }
 }
