@@ -5,7 +5,13 @@
   "main": "",
   "keywords": [],
   "author": "Isaac A. Murchie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imurchie/lattice.git"
+  },
   "license": "Apache-2.0",
-  "scripts": {
+  "scripts": {},
+  "dependencies": {
+    "lmdb-app": "file:client"
   }
 }
