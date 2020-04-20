@@ -13,8 +13,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "fastify": "^2.0.0",
+    "fastify-autoload": "^1.0.0",
     "fastify-plugin": "^1.5.0",
-    "fastify-autoload": "^1.0.0"
+    "request-promise": "^4.2.5"
   },
   "devDependencies": {
     "tap": "^12.5.3"

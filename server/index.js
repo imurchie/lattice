@@ -14,7 +14,8 @@ const fastify = require('fastify')({
 // automatically load the routes in 'services'
 fastify.register(AutoLoad, {
   dir: path.join(__dirname, 'services'),
-  options: { prefix: `/${version}` }
+  options: { prefix: `/${version}` },
+  ignorePattern: /utils.js/
 });
 
 // add a redirect from the bare url to the prefixed root
