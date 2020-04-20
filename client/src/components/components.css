@@ -1,21 +1,10 @@
 .lmdb-search {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .lmdb-search input {
   font-size: 1em;
   line-height: 1.5;
-}
-
-.lmdb-search input[type=text] {
-  padding: 0 5px;
-  margin-right: 5px;
-}
-
-.lmdb-search input[type=submit] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .lmdb-movie-list {

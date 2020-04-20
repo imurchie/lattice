@@ -1,9 +1,15 @@
 # Lattice Movie Database
 
+A simple client-server for accessing a movie database.
 
 ## Requirements
 
-Node 10 LTS (10.16.0) or later
+Node 10 LTS (10.16.0) or later.
+
+## Installation
+
+To install the dependencies, simply run `npm install` in the main directory
+of this repository. This will install all the sub-packages as well.
 
 ## Running the system
 

@@ -1,6 +1,7 @@
 {
   "name": "lmdb-server",
   "version": "1.0.0",
+  "private": true,
   "description": "Lattice Movie Database: Server",
   "main": "index.js",
   "scripts": {
@@ -15,6 +16,7 @@
     "fastify": "^2.0.0",
     "fastify-autoload": "^1.0.0",
     "fastify-plugin": "^1.5.0",
+    "request": "^2.88.2",
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
