@@ -8,3 +8,7 @@ There are lots of alternatives in the JS world.
   - bootstrapped the React code with [Create React App](https://create-react-app.dev/)
     though adjusted file structure to fit better into also having the Node.js
     server in the same repo.
+- web server: [fastify](https://www.fastify.io/), mostly because I've been wanting to
+  try it out, as an alternative to [express](https://expressjs.com/), which is
+  a little long in the tooth. Fastify has an acceptable license ([MIT](https://opensource.org/licenses/MIT))
+  and active development but not ridiculous updates to have to manage.

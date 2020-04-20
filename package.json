@@ -10,7 +10,11 @@
     "url": "https://github.com/imurchie/lattice.git"
   },
   "license": "Apache-2.0",
-  "scripts": {},
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start:all": "run-p start:server start:client"
+  },
   "dependencies": {
     "lmdb-app": "file:client",
     "lmdb-server": "file:server"
