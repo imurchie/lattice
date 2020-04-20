@@ -1,5 +1,6 @@
 import React from 'react';
 import PersonListDetail from './PersonListDetail';
+import './components.css';
 
 
 class MovieDetail extends React.Component {
@@ -39,11 +40,17 @@ class MovieDetail extends React.Component {
     }
 
     return (
-      <div>
-        <h1>Movie!</h1>
-        {details.title} ({details.release_date})<br/>
-        <i>{details.tagline}</i>
-        {details.credits.cast.map((member) => (<PersonListDetail id={member.id} name={member.name} character={member.character} key={member.id} />))}
+      <div className="lmdb-movie-detail">
+        <h1>{details.title}</h1>
+        <div className="lmdb-movie-tagline">
+          {details.tagline}
+        </div>
+        <p>Release Date: {details.release_date}</p>
+
+        <div className="lmdb-movie-detail-cast">
+          <h3>Cast</h3>
+          {details.credits.cast.map((member) => (<PersonListDetail id={member.id} name={member.name} character={member.character} key={member.id} />))}
+        </div>
       </div>
     );
   }

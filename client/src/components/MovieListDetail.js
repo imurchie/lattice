@@ -1,9 +1,14 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import './components.css';
 
 
 export default function MovieListDetail (props) {
-  const { title, id } = props;
+  const {
+    id,
+    title,
+    poster_path: posterPath,
+  } = props.movie;
 
   const history = useHistory();
 
@@ -12,6 +17,9 @@ export default function MovieListDetail (props) {
   }
 
   return (
-    <li onClick={navigate}>{title}: {id}</li>
+    <div className="lmdb-movie-list-detail">
+      <img className="lmdb-movie-poster" src={`http://image.tmdb.org/t/p/w500${posterPath}`} alt={title} onClick={navigate} />
+      <p>{title}</p>
+    </div>
   );
 }

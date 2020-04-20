@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import './components.css';
 
 
 class PersonDetail extends React.Component {
@@ -37,10 +39,18 @@ class PersonDetail extends React.Component {
     }
 
     return (
-      <div>
-        <h1>Person!</h1>
-        {details.name} ({details.birthday})<br/>
-        <i>{details.biography}</i>
+      <div className="lmdb-person-detail">
+        <h1>{details.name}</h1>
+        <p>Birthday: {details.birthday}</p>
+        <p>{details.biography}</p>
+        <div className="lmdb-person-detail-movies">
+          <h3>Movies</h3>
+          {details.movie_credits.cast.map((movie) => {
+            return (<div>
+              <Link to={`/movie/${movie.id}`}>{movie.title} (<i>{movie.release_date}</i>)</Link>
+            </div>);
+          })}
+        </div>
       </div>
     );
   }

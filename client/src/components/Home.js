@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieList from './MovieList';
+import './components.css';
 
 
 export default class Home extends React.Component {
@@ -75,7 +76,7 @@ export default class Home extends React.Component {
     return (
       <div className="App">
         <div>
-          <form onSubmit={this.handleSubmit} className="search">
+          <form onSubmit={this.handleSubmit} className="lmdb-search">
             <input placeholder="Movie Title" type="text" value={this.state.searchValue} onChange={this.handleChange} />
             <input type="submit" value="Search" />
           </form>

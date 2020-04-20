@@ -1,13 +1,14 @@
 import React from 'react';
 import MovieListDetail from './MovieListDetail';
+import './components.css';
 
 
 function MovieList (props) {
   return (
-    <div>
+    <div className="lmdb-movie-list">
       {props.movies.map(movie => {
         return (
-          <MovieListDetail title={movie.title} id={movie.id} key={movie.id} />
+          <MovieListDetail movie={movie} key={movie.id} />
         );
       })}
     </div>

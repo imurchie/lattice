@@ -1,0 +1,47 @@
+.lmdb-search {
+  margin: 15px 0;
+}
+
+.lmdb-search input {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.lmdb-search input[type=text] {
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+.lmdb-search input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.lmdb-movie-list {
+  margin: 0 auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+@media (min-width: 50px) {
+  .lmdb-movie-list-detail {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 80px) {
+  .lmdb-movie-list-detail {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.lmdb-movie-detail {
+  margin: 0 auto;
+}
+
+.lmdb-movie-tagline {
+  font-style: italic;
+}
