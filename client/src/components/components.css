@@ -9,22 +9,19 @@
 
 .lmdb-movie-list {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1.5rem;
 }
 
-@media (min-width: 50px) {
-  .lmdb-movie-list-detail {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.lmdb-movie-list-detail {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media (min-width: 80px) {
-  .lmdb-movie-list-detail {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.lmdb-movie-poster {
+  width: 150px;
+  height: auto;
 }
 
 .lmdb-movie-detail {
