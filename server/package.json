@@ -13,7 +13,7 @@
   "author": "Isaac A. Murchie",
   "license": "Apache-2.0",
   "dependencies": {
-    "fastify": "^2.0.0",
+    "fastify": "^2.15.1",
     "fastify-autoload": "^1.0.0",
     "fastify-plugin": "^1.5.0",
     "request": "^2.88.2",
